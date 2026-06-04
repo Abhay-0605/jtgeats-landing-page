@@ -1088,3 +1088,328 @@ body {
   .modal-submit:hover {
     background: #17a863;
   }
+
+
+  /* ===== RESPONSIVE ===== */
+
+/* ===== TABLET — 1024px ===== */
+@media (max-width: 1024px) {
+
+    /* NAVBAR */
+    .nav-inner {
+      padding: 0 40px;
+    }
+    .nav-links {
+      gap: 20px;
+    }
+    .nav-links a {
+      font-size: 15px;
+    }
+  
+    /* HERO */
+    .hero-inner {
+      padding: 0 40px;
+      min-height: 480px;
+    }
+    .hero-content {
+      padding-top: 160px;
+      width: 100%;
+    }
+    .hero-title {
+      font-size: 52px;
+    }
+    .hero-image {
+      width: 380px;
+      height: 400px;
+    }
+  
+    /* KITCHEN */
+    .kitchen-inner {
+      width: 100%;
+      padding: 60px 40px;
+    }
+    .cards-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .food-card {
+      width: 100%;
+    }
+    .card-image {
+      width: 100%;
+    }
+    .card-details {
+      width: 100%;
+    }
+  
+    /* POPULAR */
+    .popular-section {
+      width: 100%;
+      padding: 0 40px;
+    }
+    .carousel-outer {
+      width: 100%;
+    }
+    .carousel-viewport {
+      width: 100%;
+    }
+  
+    /* SERVICE */
+    .service-container {
+      width: 100%;
+      padding: 60px 40px;
+    }
+    .service-title {
+      font-size: 32px;
+      width: 100%;
+    }
+    .service-row2 {
+      width: 100%;
+    }
+  
+    /* CONTACT */
+    .contact-section {
+      padding: 60px 40px;
+      height: auto;
+    }
+    .contact-left {
+      width: 100%;
+    }
+    .contact-form {
+      width: 100%;
+    }
+    .contact-right {
+      width: 380px;
+      height: 320px;
+    }
+  
+    /* FOOTER */
+    .footer-inner {
+      padding: 0 40px;
+    }
+    .footer-links {
+      gap: 20px;
+    }
+  }
+  
+  /* ===== MOBILE — 767px ===== */
+  @media (max-width: 767px) {
+  
+    /* NAVBAR */
+    .navbar {
+      height: auto;
+      padding: 12px 0;
+    }
+    .nav-inner {
+      padding: 0 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-links {
+      order: 3;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .nav-links a {
+      font-size: 14px;
+    }
+  
+    /* HERO */
+    .hero-inner {
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: auto;
+    }
+    .hero-content {
+      padding-top: 40px;
+      padding-bottom: 0;
+      width: 100%;
+    }
+    .hero-title {
+      font-size: 36px;
+    }
+    .hero-subtitle {
+      width: 100%;
+      font-size: 15px;
+    }
+    .search-bar {
+      width: 100%;
+    }
+    .hero-image {
+      width: 100%;
+      height: 280px;
+      margin-top: 20px;
+    }
+  
+    /* KITCHEN */
+    .kitchen-section {
+      min-height: auto;
+      padding: 40px 20px;
+    }
+    .kitchen-inner {
+      width: 100%;
+      padding: 0;
+    }
+    .kitchen-title {
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
+    .cards-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .food-card {
+      width: 100%;
+      height: auto;
+    }
+    .card-image {
+      width: 100%;
+      height: 180px;
+    }
+    .card-details {
+      width: 100%;
+      height: auto;
+      padding: 12px 16px;
+    }
+  
+    /* POPULAR */
+    .popular-section {
+      width: 100%;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+    .popular-title {
+      font-size: 28px;
+    }
+    .carousel-outer {
+      gap: 8px;
+    }
+    .carousel-arrow {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+    .carousel-viewport {
+      width: 100%;
+    }
+    .carousel-card {
+      width: 240px;
+    }
+  
+    /* REQUEST BTN */
+    .request-btn {
+      width: 180px;
+      font-size: 14px;
+    }
+  
+    /* SERVICE */
+    .service-section {
+      height: auto;
+    }
+    .service-container {
+      width: 100%;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+    .service-row1 {
+      width: 100%;
+    }
+    .service-title {
+      font-size: 26px;
+      line-height: 38px;
+      width: 100%;
+    }
+    .service-subtitle {
+      width: 100%;
+      font-size: 13px;
+    }
+    .service-row2 {
+      width: 100%;
+      height: 240px;
+    }
+    .service-green-bg {
+      height: 200px;
+    }
+  
+    /* CONTACT */
+    .contact-section {
+      padding: 40px 20px;
+      height: auto;
+    }
+    .contact-inner {
+      flex-direction: column;
+      gap: 32px;
+    }
+    .contact-left {
+      width: 100%;
+      height: auto;
+      gap: 24px;
+    }
+    .contact-text {
+      width: 100%;
+    }
+    .contact-title {
+      font-size: 20px;
+      width: 100%;
+    }
+    .contact-form {
+      width: 100%;
+      height: auto;
+      gap: 16px;
+    }
+    .form-row {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-submit-btn {
+      width: 100%;
+    }
+    .contact-right {
+      width: 100%;
+      height: 260px;
+    }
+  
+    /* FOOTER */
+    .footer {
+      height: auto;
+      padding: 24px 0;
+    }
+    .footer-inner {
+      padding: 0 20px;
+      flex-direction: column;
+      gap: 16px;
+      height: auto;
+      text-align: center;
+    }
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+    .footer-links a {
+      font-size: 15px;
+    }
+  
+    /* MODAL */
+    .modal {
+      width: 90%;
+      margin: 0 20px;
+    }
+    .modal-header {
+      padding: 20px;
+    }
+    .modal-body {
+      padding: 20px;
+    }
+    .modal-footer {
+      padding: 16px 20px;
+      flex-direction: column;
+    }
+    .modal-cancel,
+    .modal-submit {
+      width: 100%;
+    }
+  }
