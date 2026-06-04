@@ -67,7 +67,7 @@ videoWrapper.addEventListener('click', () => {
   modalCancel.addEventListener('click', closeModal);
   modalSubmit.addEventListener('click', closeModal);
   
-  // Overlay pe click karo toh bhi band ho
+
   modalOverlay.addEventListener('click', (e) => {
     if (e.target === modalOverlay) closeModal();
   });
