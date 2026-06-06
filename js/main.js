@@ -1,4 +1,3 @@
-// ===== CAROUSEL =====
 const track = document.getElementById('carouselTrack');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
@@ -13,15 +12,11 @@ const modalSubmit = document.getElementById('modalSubmit');
 
 const cardWidth = 277 + 27;
 let currentIndex = 0;
-const totalCards = track.children.length;
-const visibleCards = 3;
-const maxIndex = totalCards - visibleCards;
+const maxIndex = track.children.length - 3;
 
 function updateCarousel() {
   track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
   track.style.transition = 'transform 0.4s ease';
-
-  // Arrow states
   prevBtn.style.opacity = currentIndex === 0 ? '0.4' : '1';
   nextBtn.style.opacity = currentIndex >= maxIndex ? '0.4' : '1';
 }
@@ -40,35 +35,33 @@ prevBtn.addEventListener('click', () => {
   }
 });
 
-// Initial state
 updateCarousel();
+
 videoWrapper.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
-      playOverlay.classList.add('hidden');     // play icon hide
-    } else {
-      video.pause();
-      playOverlay.classList.remove('hidden');  // play icon show
-    }
-  });
-
-  function openModal() {
-    modalOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';   // scroll band
+  if (video.paused) {
+    video.play();
+    playOverlay.classList.add('hidden');
+  } else {
+    video.pause();
+    playOverlay.classList.remove('hidden');
   }
-  
-  function closeModal() {
-    modalOverlay.classList.remove('active');
-    document.body.style.overflow = '';          // scroll wapas
-  }
-  
-  requestDishBtn.addEventListener('click', openModal);
-  modalClose.addEventListener('click', closeModal);
-  modalCancel.addEventListener('click', closeModal);
-  modalSubmit.addEventListener('click', closeModal);
-  
+});
 
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) closeModal();
-  });
-  
+function openModal() {
+  modalOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modalOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+requestDishBtn.addEventListener('click', openModal);
+modalClose.addEventListener('click', closeModal);
+modalCancel.addEventListener('click', closeModal);
+modalSubmit.addEventListener('click', closeModal);
+
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) closeModal();
+});
